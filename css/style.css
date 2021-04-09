@@ -22,7 +22,12 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Raleway", sans-serif;
 }
 
@@ -90,7 +95,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
 }
 
-#header .profile h1 a, #header .profile h1 a:hover {
+#header .profile h1 a,
+#header .profile h1 a:hover {
   color: #fff;
   text-decoration: none;
 }
@@ -124,6 +130,7 @@ h1, h2, h3, h4, h5, h6 {
   #header {
     left: -300px;
   }
+
   #main {
     margin-left: 0;
   }
@@ -143,7 +150,7 @@ h1, h2, h3, h4, h5, h6 {
   list-style: none;
 }
 
-.nav-menu > ul > li {
+.nav-menu>ul>li {
   position: relative;
   white-space: nowrap;
 }
@@ -164,12 +171,16 @@ h1, h2, h3, h4, h5, h6 {
   color: #6f7180;
 }
 
-.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+.nav-menu a:hover,
+.nav-menu .active>a,
+.nav-menu li:hover>a {
   text-decoration: none;
   color: #fff;
 }
 
-.nav-menu a:hover i, .nav-menu .active > a i, .nav-menu li:hover > a i {
+.nav-menu a:hover i,
+.nav-menu .active>a i,
+.nav-menu li:hover>a i {
   color: #149ddd;
 }
 
@@ -211,6 +222,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
+  /*vh = view height the number is the percentage*/
   background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
 }
@@ -265,6 +277,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 28px;
     line-height: 36px;
   }
+
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
@@ -489,11 +502,11 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.projects .projects-item {
+.portfolio .portfolio-item {
   margin-bottom: 30px;
 }
 
-.projects #projects-flters {
+.portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 35px auto;
   list-style: none;
@@ -503,7 +516,7 @@ section {
   padding: 2px 15px;
 }
 
-.projects #projects-flters li {
+.portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px 8px 15px;
@@ -516,22 +529,23 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.projects #projects-flters li:hover, .projects #projects-flters li.filter-active {
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
   color: #149ddd;
 }
 
-.projects #projects-flters li:last-child {
+.portfolio #portfolio-flters li:last-child {
   margin-right: 0;
 }
 
-.projects .projects-wrap {
+.portfolio .portfolio-wrap {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
 
-.projects .projects-wrap::before {
+.portfolio .portfolio-wrap::before {
   content: "";
   background: rgba(255, 255, 255, 0.5);
   position: absolute;
@@ -544,7 +558,7 @@ section {
   opacity: 0;
 }
 
-.projects .projects-wrap .projects-links {
+.portfolio .portfolio-wrap .portfolio-links {
   opacity: 1;
   left: 0;
   right: 0;
@@ -556,7 +570,7 @@ section {
   justify-content: center;
 }
 
-.projects .projects-wrap .projects-links a {
+.portfolio .portfolio-wrap .portfolio-links a {
   color: #fff;
   font-size: 28px;
   text-align: center;
@@ -565,15 +579,15 @@ section {
   width: 50%;
 }
 
-.projects .projects-wrap .projects-links a:hover {
+.portfolio .portfolio-wrap .portfolio-links a:hover {
   background: rgba(20, 157, 221, 0.95);
 }
 
-.projects .projects-wrap .projects-links a + a {
+.portfolio .portfolio-wrap .portfolio-links a+a {
   border-left: 1px solid #37b3ed;
 }
 
-.projects .projects-wrap:hover::before {
+.portfolio .portfolio-wrap:hover::before {
   top: 0;
   left: 0;
   right: 0;
@@ -581,7 +595,7 @@ section {
   opacity: 1;
 }
 
-.projects .projects-wrap:hover .projects-links {
+.portfolio .portfolio-wrap:hover .portfolio-links {
   opacity: 1;
   bottom: 0;
 }
@@ -589,11 +603,11 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-.blogs .icon-box {
+.services .icon-box {
   margin-bottom: 20px;
 }
 
-.blogs .icon {
+.services .icon {
   float: left;
   display: flex;
   align-items: center;
@@ -606,35 +620,35 @@ section {
   border: 1px solid #149ddd;
 }
 
-.blogs .icon i {
+.services .icon i {
   color: #fff;
   font-size: 24px;
 }
 
-.blogs .icon-box:hover .icon {
+.services .icon-box:hover .icon {
   background: #fff;
 }
 
-.blogs .icon-box:hover .icon i {
+.services .icon-box:hover .icon i {
   color: #149ddd;
 }
 
-.blogs .title {
+.services .title {
   margin-left: 80px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-.blogs .title a {
+.services .title a {
   color: #343a40;
 }
 
-.blogs .title a:hover {
+.services .title a:hover {
   color: #149ddd;
 }
 
-.blogs .description {
+.services .description {
   margin-left: 80px;
   line-height: 24px;
   font-size: 14px;
@@ -668,7 +682,8 @@ section {
   margin: 0;
 }
 
-.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
   color: #c3e8fa;
   font-size: 26px;
 }
@@ -709,7 +724,8 @@ section {
   left: calc(50% - 20px);
 }
 
-.testimonials .owl-nav, .testimonials .owl-dots {
+.testimonials .owl-nav,
+.testimonials .owl-dots {
   margin-top: 5px;
   text-align: center;
 }
@@ -804,7 +820,9 @@ section {
   color: #fff;
 }
 
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
   background: #149ddd;
   color: #fff;
 }
@@ -837,7 +855,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br + br {
+.contact .php-email-form .error-message br+br {
   margin-top: 25px;
 }
 
@@ -870,7 +888,8 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .php-email-form input,
+.contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
@@ -901,6 +920,7 @@ section {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -910,6 +930,7 @@ section {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -937,11 +958,11 @@ section {
   font-size: 15px;
 }
 
-.breadcrumbs ol li + li {
+.breadcrumbs ol li+li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li + li::before {
+.breadcrumbs ol li+li::before {
   display: inline-block;
   padding-right: 10px;
   color: #0e2442;
@@ -952,36 +973,39 @@ section {
   .breadcrumbs .d-flex {
     display: block !important;
   }
+
   .breadcrumbs ol {
     display: block;
   }
+
   .breadcrumbs ol li {
     display: inline-block;
   }
 }
 
 /*--------------------------------------------------------------
-# projects Details
+# Portfolio Details
 --------------------------------------------------------------*/
-.projects-details {
+.portfolio-details {
   padding-top: 40px;
 }
 
-.projects-details .projects-details-container {
+.portfolio-details .portfolio-details-container {
   position: relative;
 }
 
-.projects-details .projects-details-carousel {
+.portfolio-details .portfolio-details-carousel {
   position: relative;
   z-index: 1;
 }
 
-.projects-details .projects-details-carousel .owl-nav, .projects-details .projects-details-carousel .owl-dots {
+.portfolio-details .portfolio-details-carousel .owl-nav,
+.portfolio-details .portfolio-details-carousel .owl-dots {
   margin-top: 5px;
   text-align: left;
 }
 
-.projects-details .projects-details-carousel .owl-dot {
+.portfolio-details .portfolio-details-carousel .owl-dot {
   display: inline-block;
   margin: 0 10px 0 0;
   width: 12px;
@@ -990,11 +1014,11 @@ section {
   background-color: #ddd !important;
 }
 
-.projects-details .projects-details-carousel .owl-dot.active {
+.portfolio-details .portfolio-details-carousel .owl-dot.active {
   background-color: #149ddd !important;
 }
 
-.projects-details .projects-info {
+.portfolio-details .portfolio-info {
   padding: 30px;
   position: absolute;
   right: 0;
@@ -1004,7 +1028,7 @@ section {
   z-index: 2;
 }
 
-.projects-details .projects-info h3 {
+.portfolio-details .portfolio-info h3 {
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 20px;
@@ -1012,36 +1036,37 @@ section {
   border-bottom: 1px solid #eee;
 }
 
-.projects-details .projects-info ul {
+.portfolio-details .portfolio-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.projects-details .projects-info ul li + li {
+.portfolio-details .portfolio-info ul li+li {
   margin-top: 10px;
 }
 
-.projects-details .projects-description {
+.portfolio-details .portfolio-description {
   padding-top: 50px;
 }
 
-.projects-details .projects-description h2 {
+.portfolio-details .portfolio-description h2 {
   width: 50%;
   font-size: 26px;
   font-weight: 400;
   margin-bottom: 20px;
 }
 
-.projects-details .projects-description p {
+.portfolio-details .portfolio-description p {
   padding: 0;
 }
 
 @media (max-width: 768px) {
-  .projects-details .projects-description h2 {
+  .portfolio-details .portfolio-description h2 {
     width: 100%;
   }
-  .projects-details .projects-info {
+
+  .portfolio-details .portfolio-info {
     position: static;
     margin-top: 30px;
   }
