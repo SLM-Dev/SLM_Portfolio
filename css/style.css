@@ -404,7 +404,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 50px;
@@ -426,6 +426,20 @@ section {
   float: right;
   font-style: normal;
 }
+ /* Icon Section Start  */
+img  {
+border-style: none;
+box-sizing: border-box;
+color: #272829;
+font-family: "Open Sans",sans-serif;
+line-height: 24px;
+text-align: left;
+vertical-align: middle;
+padding-right: 0px;
+padding-left: 7px;
+}
+
+/* Icon Section End */
 
 .skills .progress-bar-wrap {
   background: #dce8f8;
@@ -668,6 +682,7 @@ section {
   border-radius: 50%;
   margin: 0 auto;
 }
+
 
 .testimonials .testimonial-item h3 {
   font-size: 18px;
