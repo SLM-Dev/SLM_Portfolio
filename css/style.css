@@ -85,6 +85,30 @@ h6 {
   border: 8px solid #2c2f3f;
 }
 
+img.img-fluid.rounded-circle {
+  
+  border: 8px solid #2C2F3F;
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: #272829;
+  display: block;
+  font-family: "Open Sans",sans-serif;
+  height: auto;
+  line-height: 24px;
+  margin: 15px auto;
+  max-width: 100%;
+  padding-left: 0px;
+  padding-right: 0;
+  text-align: left;
+  vertical-align: middle;
+  width: 120px;
+
+}
+
+
+
+
+
 #header .profile h1 {
   font-size: 24px;
   margin: 0;
@@ -436,7 +460,7 @@ line-height: 24px;
 text-align: left;
 vertical-align: middle;
 padding-right: 0px;
-/* padding-left: 7px; */
+padding-left: 7px;
 }
 
 /* Icon Section End */

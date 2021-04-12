@@ -6,14 +6,15 @@ document.getElementById('form')
 
    btn.value = 'Sending...';
 
-   const templateID = 'default_service';
-   const serviceID = 'service_3x84eh8';
-
+   const serviceID = 'default_service';
+   const templateID = 'template_8w11kt6';
+//    templateID
+//    serviceID
 
    emailjs.sendForm(serviceID, templateID, this)
    .then(() => {
        btn.value = 'Send Email';
-       swal({
+       Swal.fire({
            title: "Message Sent!",
            text: "I will respond within 24-48 hours!",
            icon: "success",
@@ -21,13 +22,12 @@ document.getElementById('form')
        })
    }, (err) => {
        btn.value = 'Send Email';
-       swal({
+       Swal.fire({
            title: "Error!",
-           text: "Ooops, looks like something went wrong!",
+           text: JSON.stringify(err),
            icon: "error",
            button: "Try Again!",
        });
-       alert(JSON.stringify(err));
 
 
 
